@@ -1,15 +1,12 @@
 import axios from "axios"
 import { useState } from "react"
 
-const WaetherSearch = ({weatherInfo}) => {
+const WaetherSearch = () => {
 
     const [country, setCountry] = useState(null)
 
-
     const [isCelsius, setIsCelsius] = useState(true)
    
-
-  
 
     const KelvinToCelsius = (tempK) =>{
        return (tempK - 273.15).toFixed(2)

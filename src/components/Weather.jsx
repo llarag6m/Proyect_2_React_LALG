@@ -25,9 +25,6 @@ const Weather = ({weatherInfo}) => {
 
     const resultTemp = isCelsius ? KelvinToCelsius(weatherInfo?.main.temp) : KelvinToFarenheit(weatherInfo?.main.temp)
    
-   
-
-
 
 
 
@@ -73,9 +70,6 @@ const Weather = ({weatherInfo}) => {
             </section>
         </section>
         <button onClick={HandleChangeTemp} className="mt-4 bg-white/80 text-black rounded-3xl px-9 py-2 mb-5">Cambiar a {isCelsius ? "F" : "C"}</button>
-    
-
-
 
     </section>
 
