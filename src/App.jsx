@@ -3,6 +3,7 @@ import "./App.css";
 import axios from "axios";
 import Weather from "./components/Weather";
 import Loader from "./components/Loader";
+import WaetherSearch from "./components/WaetherSearch";
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
     <main className=" bg-[url('/public/Fonds/fond.jpg')] text-white min-h-screen  font-lato flex justify-center  items-center bg-center bg-cover ">
       <Weather className="hidden" weatherInfo = {weatherInfo}/>
       <Loader />
+      <WaetherSearch weatherInfo = {weatherInfo}/>
     </main>
   );
 }
