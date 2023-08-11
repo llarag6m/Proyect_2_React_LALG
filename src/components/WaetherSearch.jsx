@@ -48,7 +48,7 @@ const WaetherSearch = () => {
         </div>
      <div className="h-5">
       <form onSubmit={handleSubmit} className="h-5">
-        <input id="city" className='border-2 border-black text-black ' type="text" />
+        <input id="city" className='border-2 border-black text-black rounded-[10px]' type="text" />
         <button className='bg-gray-200 text-black rounded-lg mx-4 border-x-8'>Search</button>
       </form>
     </div>
@@ -88,7 +88,7 @@ const WaetherSearch = () => {
                 </article>
             </section>
         </section>
-        <button onClick={HandleChangeTempSearch} className="mt-4 bg-white/80 text-black rounded-3xl px-9 py-2">Cambiar a {isCelsius ? "F" : "C"}</button>
+        <button onClick={HandleChangeTempSearch} className="mt-4 bg-white/80 text-black rounded-3xl px-9 py-2">Switch to {isCelsius ? "F" : "C"}</button>
     </section>
   )
 }

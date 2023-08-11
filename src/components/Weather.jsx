@@ -32,8 +32,6 @@ const Weather = ({weatherInfo}) => {
     
     <section className="text-center">
 
-  
-
         <h2 className="py-3 text-2xl">{weatherInfo?.sys.country}  { weatherInfo?.name}</h2>
         <section className="grid gap-4  sm:grid-cols-[auto_auto] ">
             {/*Seccion superior */}
