@@ -49,21 +49,21 @@ const Weather = ({weatherInfo}) => {
             <section className="bg-white/60 p-2 py-4 rounded-2xl grid grid-cols-3  items-center sm:grid-cols-1 ">
                 <article className="inline-grid items-center">
                     <div className="w-[40px]">
-                        <img src={"/public/images/wind.png"}alt="" />
+                        <img src={"/images/wind.png"}alt="" />
                     </div>
                     <span>{weatherInfo?.wind.speed} m/s</span>
                 </article>
 
                 <article className="flex gap-2 items-center py-5">
                     <div className="w-[40px] ¿">
-                        <img src={"/public/images/humidity.png"} alt="" />
+                        <img src={"/images/humidity.png"} alt="" />
                     </div>
                     <span>{weatherInfo?.main.humidity} %</span>
                 </article>
 
                 <article className="flex gap-2 items-center ">
                     <div className="w-[40px]">
-                        <img src={"/public/images/pressure.png"} alt="" />
+                        <img src={"/images/pressure.png"} alt="" />
                     </div>
                     <span>{weatherInfo?.main.pressure} hPa</span>
                 </article>
