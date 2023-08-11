@@ -32,7 +32,7 @@ const Weather = ({weatherInfo}) => {
     
     <section className="text-center">
 
-  
+  <h1 className="text-3xl"> Ubicacion Actual </h1>
 
         <h2 className="py-3 text-2xl">{weatherInfo?.sys.country}  { weatherInfo?.name}</h2>
         <section className="grid gap-4  sm:grid-cols-[auto_auto] ">

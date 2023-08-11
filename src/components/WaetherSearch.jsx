@@ -56,7 +56,7 @@ const WaetherSearch = () => {
         <h2 className="py-3 text-2xl text-center">{country?.name}</h2>
         <section className=" grid gap-4  sm:grid-cols-[auto_auto] ">
             {/*Seccion superior */}
-            <section className=" bg-white/20   p-2 rounded-2xl grid grid-cols-2 items-center">
+            <section className=" bg-white/20   p-3 rounded-2xl grid grid-cols-2 items-center">
                 <h4 className="col-span-2 text-xl text-center">{country?.weather[0].description}</h4>
                 <span className="text-4xl">{resultTemp1} °{isCelsius ? "C" : "F"}</span>
                 <div>
