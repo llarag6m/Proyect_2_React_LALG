@@ -32,10 +32,12 @@ const Weather = ({weatherInfo}) => {
     
     <section className="text-center">
 
+  
+
         <h2 className="py-3 text-2xl">{weatherInfo?.sys.country}  { weatherInfo?.name}</h2>
         <section className="grid gap-4  sm:grid-cols-[auto_auto] ">
             {/*Seccion superior */}
-            <section className="bg-white/60 p-2 rounded-2xl grid grid-cols-2 items-center">
+            <section className="bg-white/20  p-2 rounded-2xl grid grid-cols-2 items-center">
                 <h4 className="col-span-2 text-xl">{weatherInfo?.weather[0].description}</h4>
                 <span className="text-4xl">{resultTemp} °{isCelsius ? "C" : "F"}</span>
                 <div>
@@ -44,7 +46,7 @@ const Weather = ({weatherInfo}) => {
             </section>
 
             {/*Seccion inferior */}
-            <section className="bg-white/60 p-2 py-4 rounded-2xl grid grid-cols-3  items-center sm:grid-cols-1 ">
+            <section className="bg-white/20  p-2 py-4 rounded-2xl grid grid-cols-3  items-center sm:grid-cols-1 ">
                 <article className="inline-grid items-center">
                     <div className="w-[40px]">
                         <img src={"/images/wind.png"}alt="" />
